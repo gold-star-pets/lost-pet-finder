@@ -1,0 +1,34 @@
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+article {
+    background: #ccc;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+img {
+    height: 100px;
+    min-width: 50px;
+    min-height: 50px;
+    float: right;
+}
+
+h1 {
+    color: steelblue;
+
+}
+
+span {
+    font-weight: bold;
+}

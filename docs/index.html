@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://dev.mavo.io/dist/mavo.css"/>
+
+  <link rel="stylesheet" href="main.css">
+  
+  <script src="https://get.mavo.io/mavo.js"></script>  
+  
+  <title>Find Your Lost Pet</title>
 </head>
-<body>
-    THis is the main real app page
+
+<body mv-app="lost-pet" mv-storage="https://github.com/gold-star-pets/lost-pet-finder">
+  <header>
+    <h1>Found a Pet/Claim a Pet</h1>
+  </header>
+  <main>
+    <ul>
+      <li property="pet" mv-multiple>
+        <article class="lost-pet">
+          <img property="photo">
+          <div>Type of Pet: <span property="type">cat</span></div>
+          <div>Where Found: <span property="found">NW 10th and Couch</span></div>
+          <div>Notes: <span property="notes">notes about finding</span></div>
+          <div>
+            <strong>Claim This Pet: 
+              <input property="claimed" type="checkbox">this is my pet!
+            </strong>
+            <p>
+              <span property="owner-name">name</span>
+              <span property="owner-phone">phone</span>
+            </p>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </main>
+  <footer>
+
+  </footer>
 </body>
+
 </html>
